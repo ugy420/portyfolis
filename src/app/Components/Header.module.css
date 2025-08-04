@@ -1,0 +1,28 @@
+.container{
+    font-size: 2rem;
+    padding-inline: .7rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons {
+    padding-top: .5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.container button{
+    cursor:pointer;
+    border-color: #57C4E5;
+    border-radius:10px;
+    border-style: solid;
+    padding: 8px;
+    font-size: 1rem;
+    color: #57C4E5;
+    background-color: #212738;
+}
+
+.container button.hamburger{
+    border-style: none;
+}

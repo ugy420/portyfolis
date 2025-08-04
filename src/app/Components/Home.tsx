@@ -1,16 +1,18 @@
+import styles from './Home.module.css';
+
 export default function Home(){
     return (
-        <div>
-            <div className="">
+        <div className={styles.container}>
+            <div className={styles.title_div}>
                 Full Stack
-            </div>
-            <div>
+                <div className={styles.white}>
                 Developer
+                </div>
             </div>
-            <div>
-                from Bhutan 🇧🇹
+            <div className={styles.text_div}>
+                Hello I'm Ugyen. A developer from Bhutan 🇧🇹
             </div>
-            <div>
+            <div className={styles.icons_div}>
                 <a href="https://github.com/ugy420">
                     <img src='github.svg' height="50"/>
                 </a>
