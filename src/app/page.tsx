@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Home from "./Components/Home";
 import Header from "./Components/Header";
 import About from "./Components/About";
+import Stack from "./Components/Stack"
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       </header>
       <Home/>
       <About/>
+      <Stack/>
       
     </div>
   );

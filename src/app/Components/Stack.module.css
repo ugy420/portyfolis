@@ -1,0 +1,28 @@
+.container {
+    padding-top: 10rem;
+    padding-left: 12rem;
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 64px;
+}
+
+.title hr{
+    width: 70%;
+    height: 1px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.gridItem{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 2rem
+}
