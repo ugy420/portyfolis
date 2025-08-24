@@ -1,6 +1,6 @@
 .container {
-    padding-top: 10rem;
-    padding-left: 12rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
     height: 100vh;
 }
 
@@ -8,7 +8,8 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 64px;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
 }
 
 .title hr{
@@ -16,13 +17,20 @@
     height: 1px;
 }
 
+.category{
+    font-size: 2rem;
+}
+
 .grid{
     display: grid;
     grid-template-columns: auto auto;
+    row-gap: 4rem;
+    
 }
 
 .gridItem{
     display: grid;
-    grid-template-columns: repeat(4,auto);
-    gap: 2rem
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 2rem;
+    
 }

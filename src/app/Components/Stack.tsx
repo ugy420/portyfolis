@@ -8,10 +8,9 @@ export default function Stack(){
                 Tech Stack <hr/>
             </div>
             <div className={styles.grid}>
-                <div>
-                    frontend
+                <div className={styles.category}>
+                    Frontend
                 </div>
-                
                 <div className={styles.gridItem}>
                     <IconLabel source='javascript.png' label='JavaScript'/>
                     <IconLabel source='typescript.png' label='TypeScript'/>
@@ -19,18 +18,26 @@ export default function Stack(){
                     <IconLabel source='nextjs.png' label="Next.js"/>
                     <IconLabel source='tailwind.png' width="45px" height='30px' label="Tailwind CSS"/>
                 </div>
-                <div>
-                    backend
+                <div className={styles.category}>
+                    Backend
                 </div>
                 <div className={styles.gridItem}>
                     <IconLabel source='node.png' label="Node.js"/>
-                    <IconLabel source='express.svg' label="Express"/>
+                    <IconLabel source='express.svg' label="Express.js"/>
                 </div>
-                <div>
-                    database
+                <div className={styles.category}>
+                    Database
                 </div>
                 <div className={styles.gridItem}>
-                    <IconLabel source='postgresql.png' label="PostgreSQL"/> <IconLabel source='mysql.png' label="MySQL"/>
+                    <IconLabel source='mysql.png' label="MySQL"/>
+                    <IconLabel source='postgresql.png' label="PostgreSQL"/>
+                </div>
+                <div className={styles.category}>
+                    Tools
+                </div>
+                <div className={styles.gridItem}>
+                    <IconLabel source="figma.svg" label="Figma"/>
+                    <IconLabel source="git.png" label="Git"/>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Stack from "./Components/Stack"
+import Contact from "./Components/Contact";
 
 export default function Page() {
   return (
@@ -14,7 +15,7 @@ export default function Page() {
       <Home/>
       <About/>
       <Stack/>
-      
+      <Contact/>
     </div>
   );
 }
