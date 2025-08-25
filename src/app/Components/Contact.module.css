@@ -19,22 +19,41 @@
 
 .zabody{
     display: flex;
-    width: 80%;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 35%;
+}
+
+.zatitle{
+    color: #57C4E5;
+    font-size: 2rem;
 }
 
 .form{
     display: flex;
+    gap: 25%;
+    width: 30%;
     flex-direction: column;
 }
 
 .form input{
+    cursor:text;
+    border-color: #57C4E5;
+    border-radius:10px;
+    border-style: solid;
+    padding: 15px;
+    font-size: 1rem;
+    color: #57C4E5;
+    background-color: #212738;
+}
+
+.btn{
     cursor:pointer;
     border-color: #57C4E5;
     border-radius:10px;
     border-style: solid;
-    padding: 12px;
-    font-size: 1rem;
-    color: #57C4E5;
-    background-color: #212738;
+    padding: 15px;
+    width: 20%;
+    font-size: 1em;
+    color: #FFFAFA;
+    background-color: #57C4E5;
 }

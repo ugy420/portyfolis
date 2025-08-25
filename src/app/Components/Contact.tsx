@@ -1,4 +1,5 @@
 import styles from './Contact.module.css'
+import Button from './ui/Button'
 
 export default function Contact(){
     return (
@@ -7,13 +8,14 @@ export default function Contact(){
                 Contact <hr/>
             </div>
             <div className={styles.zabody}>
-                <div>
-                    Let's work together
+                <div className={styles.zatitle}>
+                    Get in Touch
                 </div>
                 <div className={styles.form}>
                     <input type="text" placeholder='Name'/>
                     <input type='email' placeholder='Email'/>
-                    <input type="text" placeholder='Message'/>                   
+                    <input type="text" placeholder='Message'/>
+                    <Button text="Send" className={styles.btn}/>               
                 </div>
 
             </div>
