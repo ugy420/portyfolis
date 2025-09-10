@@ -5,7 +5,7 @@ export default function Stack(){
     return (
         <div className={styles.container}>
             <div className={styles.title}>
-                Tech Stack <hr/>
+                Tech Stack
             </div>
             <div className={styles.grid}>
                 <div className={styles.category}>

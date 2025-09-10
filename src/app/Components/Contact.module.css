@@ -1,26 +1,20 @@
 .container {
     padding-top: 5rem;
-    padding-left: 10rem;
     height: 100vh;
 }
 
 .title{
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 3.5rem;
+    justify-content: center;
+    font-size: 3rem;
     margin-bottom: 4rem;
 }
 
-.title hr{
-    width: 70%;
-    height: 1px;
-}
-
 .zabody{
+    padding-left: 10rem;
     display: flex;
     justify-content: flex-start;
-    gap: 35%;
+    gap: 5%;
 }
 
 .zatitle{
@@ -29,13 +23,25 @@
 }
 
 .form{
-    display: flex;
-    gap: 25%;
-    width: 30%;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+
 }
 
 .form input{
+    cursor:text;
+    border-color: #57C4E5;
+    border-radius:10px;
+    border-style: solid;
+    padding: 15px;
+    font-size: 1rem;
+    color: var();
+    background-color: #212738;
+}
+
+.form textarea{
+    grid-column: 1/3;
     cursor:text;
     border-color: #57C4E5;
     border-radius:10px;
@@ -52,7 +58,7 @@
     border-radius:10px;
     border-style: solid;
     padding: 15px;
-    width: 20%;
+    width: 50%;
     font-size: 1em;
     color: #FFFAFA;
     background-color: #57C4E5;

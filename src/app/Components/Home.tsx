@@ -3,14 +3,14 @@ import styles from './Home.module.css';
 export default function Home(){
     return (
         <div className={styles.container}>
+            <div className={styles.text_div}>
+                Hello I'm,<br/>Ugyen Wangda Gyeltshen,
+            </div>
             <div className={styles.title_div}>
                 Full Stack
                 <div className={styles.white}>
                 Developer
                 </div>
-            </div>
-            <div className={styles.text_div}>
-                Hello I'm Ugyen. A developer from Bhutan 🇧🇹
             </div>
             <div className={styles.icons_div}>
                 <a href="https://github.com/ugy420">

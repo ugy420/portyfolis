@@ -1,20 +1,13 @@
 .container {
     padding-top: 5rem;
-    padding-left: 10rem;
     height: 100vh;
 }
 
 .title{
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 3.5rem;
+    justify-content: center;
+    font-size: 3rem;
     margin-bottom: 4rem;
-}
-
-.title hr{
-    width: 70%;
-    height: 1px;
 }
 
 .category{
@@ -22,6 +15,7 @@
 }
 
 .grid{
+    padding-left: 10rem;
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 4rem;
