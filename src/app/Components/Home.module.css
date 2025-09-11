@@ -9,7 +9,7 @@
 
 .title_div{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     text-transform:uppercase;
     font-size: 3rem;
     font-weight: bold;
@@ -28,18 +28,32 @@
     padding-bottom: .5rem;
 }
 
+
+.icons_div{
+    margin-top: 2rem;
+}
 .icons_div a{
     padding-inline: .5rem;
 }
 
 .icons_div img{
+
     width: 2.5rem;
     height: 2.5rem;
-    filter: invert(56%) sepia(82%) saturate(355%) hue-rotate(162deg) brightness(100%) contrast(92%);
 }
 
 .icons_div img:hover{
     transform: scale(1.15);
-    filter: invert(56%) sepia(82%) saturate(355%) hue-rotate(162deg) brightness(150%) contrast(100%);
-    transition: transform .2s, filter .2s;
+}
+
+.container button{
+    width: fit-content;
+    cursor:pointer;
+    border-color: var(--emphasis-color);
+    border-radius:10px;
+    border-style: solid;
+    padding: 8px;
+    font-size: 1.75rem;
+    color: var(--neutral-color);
+    background-color: var(--emphasis-color);
 }

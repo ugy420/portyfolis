@@ -1,4 +1,5 @@
 import styles from './Home.module.css';
+import Button from './ui/Button';
 
 export default function Home(){
     return (
@@ -12,6 +13,7 @@ export default function Home(){
                 Developer
                 </div>
             </div>
+                <Button text="Curriculum Vitae"/>
             <div className={styles.icons_div}>
                 <a href="https://github.com/ugy420">
                     <img src='github.svg' height="50"/>

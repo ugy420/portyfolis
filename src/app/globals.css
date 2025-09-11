@@ -1,7 +1,7 @@
 :root {
   --neutral-color: #16161d;
   --complimentary-color: #FFFAFA;
-  --empahasis-color: #57C4E5;
+  --emphasis-color: #57C4E5;
 }
 
 @media (prefers-color-scheme: dark) {

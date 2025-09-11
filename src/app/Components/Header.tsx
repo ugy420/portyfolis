@@ -8,7 +8,6 @@ export default function Header(){
     const { scrollYProgress } = useScroll()
 
     return (
-        
         <div className={styles.container}>
             <motion.div 
                 style={{
@@ -25,8 +24,7 @@ export default function Header(){
             <div>
                 <a href="">.ug</a>
             </div>
-            <div className={styles.buttons}>
-                <Button text="Curriculum Vitae"/>
+            <div>
                 <Button text="☰" className={styles.hamburger}/>
             </div>
         </div>
