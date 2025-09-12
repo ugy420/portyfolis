@@ -5,7 +5,7 @@ export default function Home(){
     return (
         <div className={styles.container}>
             <div className={styles.text_div}>
-                Hello I'm,<br/>Ugyen Wangda Gyeltshen,
+                Hello, I'm<br/>Ugyen Wangda Gyeltshen.
             </div>
             <div className={styles.title_div}>
                 Full Stack

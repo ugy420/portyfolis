@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className={styles.container}>
-      <div className={styles.title}>About Me</div>
+      <div className="title">About Me</div>
       <div className={styles.content}>
         <Image src={"/about.png"} alt="Me" width={250} height={200} />
         <div className={styles.text_div}>

@@ -3,15 +3,9 @@
     height: 100vh;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    margin-bottom: 4rem;
-}
-
 .category{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--font-poppins);
 }
 
 .grid{
@@ -24,7 +18,7 @@
 
 .gridItem{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     row-gap: 2rem;
     
 }

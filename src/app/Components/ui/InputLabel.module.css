@@ -1,0 +1,31 @@
+.input_div{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.input_div input,
+.input_div textarea {
+    cursor: text;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--complimentary-color);
+    font-size: 1rem;
+}
+
+.input_div input {
+    border-color: var();
+    color: var();
+}
+
+.input_div textarea {
+    color: var(--neutral-color);
+    resize: none;
+    height: 12rem;
+}
+
+.fullwidth {
+    grid-column: 1/3;
+}

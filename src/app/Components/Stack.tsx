@@ -4,7 +4,7 @@ import IconLabel from './ui/IconLabel'
 export default function Stack(){
     return (
         <div className={styles.container}>
-            <div className={styles.title}>
+            <div className="title">
                 Tech Stack
             </div>
             <div className={styles.grid}>

@@ -1,21 +1,24 @@
 import styles from './Contact.module.css'
 import Button from './ui/Button'
+import Image from 'next/image'
+import InputLabel from './ui/InputLabel'
 
 export default function Contact(){
     return (
         <div className={styles.container}>
-            <div className={styles.title}>
-                Get in touch
+            <div className="title">
+                Get In Touch
             </div>
             <div className={styles.zabody}>
-                <div className={styles.zatitle}>
-                    Get in Touch
+                <div className={styles.zaside}>
+                    <Image src="/getin.png" alt="Me" width={150} height={150}></Image>
+                        Thank You!
                 </div>
                 <div className={styles.form}>
-                    <input type="text" placeholder='Name'/>
-                    <input type='email' placeholder='Email'/>
-                    <textarea></textarea>
-                    <Button text="Send" className={styles.btn}/>               
+                    <InputLabel ty="text" nm="Name" ph="John Dorji"/>
+                    <InputLabel ty="text" nm="Email" ph="example@email.com"/>
+                    <InputLabel nm="Message" ph="Hey" textarea/>
+                    <Button text="Send" className={styles.btn}/>             
                 </div>
             </div>
         </div>

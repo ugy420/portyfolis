@@ -1,6 +1,7 @@
 .container{
     font-size: 2rem;
-    padding-inline: .7rem;
+    font-family: var(--font-poppins);
+    padding-inline: 2.5rem;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
