@@ -6,9 +6,7 @@ import InputLabel from './ui/InputLabel'
 export default function Contact(){
     return (
         <div className={styles.container}>
-            <div className="title" id="contact">
-                Get In Touch
-            </div>
+            <div className="title" id="contact"><span><a href="#contact">#</a></span> Get In Touch</div>
             <div className={styles.zabody}>
                 <div className={styles.zaside}>
                     <Image src="/getin.png" alt="Me" width={150} height={150}></Image>

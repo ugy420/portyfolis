@@ -3,22 +3,23 @@
     height: 100vh;
 }
 
-.category{
-    font-size: 1.5rem;
-    font-family: var(--font-poppins);
-}
 
 .grid{
     padding-left: 10rem;
+    padding-top: 5rem;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 30% auto;
     row-gap: 4rem;
-    
+}
+
+.category{
+    font-size: 2rem;
+    font-family: var(--font-poppins);
+    font-weight: bold;
 }
 
 .gridItem{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 2rem;
-    
 }
