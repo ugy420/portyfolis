@@ -22,7 +22,7 @@ export default function Header(){
                 }}
             />
             <div>
-                <a href="">.ug</a>
+                <a href="#home">.ug</a>
             </div>
             <div>
                 <Button text="☰" className={styles.hamburger}/>

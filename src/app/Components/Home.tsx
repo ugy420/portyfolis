@@ -3,7 +3,7 @@ import Button from './ui/Button';
 
 export default function Home(){
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="home">
             <div className={styles.text_div}>
                 Hello, I'm<br/>Ugyen Wangda Gyeltshen.
             </div>

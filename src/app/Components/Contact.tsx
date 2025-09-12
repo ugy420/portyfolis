@@ -6,7 +6,7 @@ import InputLabel from './ui/InputLabel'
 export default function Contact(){
     return (
         <div className={styles.container}>
-            <div className="title">
+            <div className="title" id="contact">
                 Get In Touch
             </div>
             <div className={styles.zabody}>

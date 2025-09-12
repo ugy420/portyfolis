@@ -36,16 +36,14 @@
 
 .btn{
     cursor:pointer;
-    border-color: var(--complimentary-color);
-    border: solid;
+    border: none;
     border-radius:5px;
     padding: 10px;
     width: fit-content;
     font-size: 1rem;
-    color: var(--neutral-color);
+    background-color: var(--emphasis-color);
     grid-column: 2/3;
     justify-self: end;
-    background-color: #57C4E5;
 }
 
 .btn:hover{
