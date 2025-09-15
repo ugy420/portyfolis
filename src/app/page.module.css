@@ -2,3 +2,16 @@
     position: fixed;
     width: 100%;
 }
+
+.email{
+    font-family: var(--font-poppins);
+    position: fixed;
+    margin-top: 18%;
+    margin-left: 1rem;
+    writing-mode:sideways-rl;
+    text-orientation: sideways;
+}
+
+.email:hover{
+    color: var(--emphasis-color);
+}

@@ -6,6 +6,7 @@ import About from "./Components/About";
 import Stack from "./Components/Stack"
 import Contact from "./Components/Contact";
 import SideBar from "./Components/Sidebar";
+import Email from "./Components/Email";
 
 export default function Page() {
   return (
@@ -14,6 +15,9 @@ export default function Page() {
       <header className={styles.header}>
         <Header/>
       </header>
+      <a href="mailto:ugyenwgyeltshen.ug@gmail.com" className={styles.email}>
+        <Email/>
+      </a>
       <Home/>
       <About/>
       <Stack/>
