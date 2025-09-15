@@ -1,13 +1,24 @@
 "use client";
 
-import Button from "./ui/Button";
+import Drawer from "./Drawer"
 import styles from "./Header.module.css";
 import { motion, useScroll } from "motion/react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Header() {
   const { scrollYProgress } = useScroll();
+  const showDialog = useRef();
+
   let [open, setOpen] = useState(false);
+
+  const openDialog = () => {
+    setOpen(() => !open);
+    showDialog.current();
+  }
+
+  function handleClose(){
+    setOpen(()=> false);
+  }
 
   return (
     <div className={styles.container}>
@@ -28,11 +39,12 @@ export default function Header() {
       </div>
       <div
         className={`${styles.hamburger} ${open ? styles.open : ""}`}
-        onClick={() => setOpen(!open)}
+        onClick={() => openDialog()}
       >
         <span></span>
         <span></span>
       </div>
+      <Drawer showDialog={showDialog} onClose={handleClose}/>
     </div>
   );
 }

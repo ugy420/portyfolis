@@ -11,16 +11,16 @@ import Email from "./Components/Email";
 export default function Page() {
   return (
     <div>
-      {/* <SideBar/> */}
-      <header className={styles.header}>
-        <Header/>
-      </header>
       <a href="mailto:ugyenwgyeltshen.ug@gmail.com" className={styles.email}>
         <Email/>
       </a>
+      <header className={styles.header}>
+        <Header/>
+      </header>
       <Home/>
       <About/>
       <Stack/>
+
       <Contact/>
     </div>
   );

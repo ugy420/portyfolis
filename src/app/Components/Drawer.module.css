@@ -1,0 +1,18 @@
+.drawer{
+    margin-top: 3%;
+    margin-left: 85%;
+    width: 15%;
+    height: 100%;
+    border: none;
+    border-radius: 10px 0px 0px 0px;
+    background: var(--complimentary-color2);
+    color: var(--complimentary-color);
+    padding: 30px 50px;
+}
+
+.drawer li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
