@@ -5,7 +5,7 @@ import { useRef } from 'react'
 
 let links = ["home", "about", "stack", "contact"];
 
-export default function Drawer({showDialog, onClose} : {showDialog: boolean, onClose: () => void}){
+export default function Drawer({showDialog, onCloses} : {showDialog: boolean, onCloses: () => void}){
   const dialogRef = useRef();
 
   showDialog.current = () => {
@@ -13,7 +13,7 @@ export default function Drawer({showDialog, onClose} : {showDialog: boolean, onC
   }
 
   function closeModal(){
-    onClose();
+    onCloses();
     dialogRef.current.close();
   }
 

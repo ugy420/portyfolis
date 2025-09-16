@@ -44,7 +44,7 @@ export default function Header() {
         <span></span>
         <span></span>
       </div>
-      <Drawer showDialog={showDialog} onClose={handleClose}/>
+      <Drawer showDialog={showDialog} onCloses={handleClose}/>
     </div>
   );
 }
