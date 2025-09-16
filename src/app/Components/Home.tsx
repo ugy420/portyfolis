@@ -25,11 +25,11 @@ export default function Home() {
       </div>
       <Button text="Curriculum Vitae" />
       <div className={styles.icons_div}>
-        <a href="https://github.com/ugy420">
-          <img src="github.svg" height="50" />
+        <a href="https://github.com/ugy420" aria-label="github">
+          <img src="github.svg" height="50" alt="github"/>
         </a>
-        <a href="https://www.linkedin.com/in/ugyen-wangda-gyeltshen-6a7b21270/">
-          <img src="linkedin.svg" height="50" />
+        <a href="https://www.linkedin.com/in/ugyen-wangda-gyeltshen-6a7b21270/" aria-label="linkedin">
+          <img src="linkedin.svg" height="50" alt="linkedin"/>
         </a>
       </div>
     </motion.div>
