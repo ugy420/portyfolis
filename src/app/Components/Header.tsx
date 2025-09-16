@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 
 export default function Header() {
   const { scrollYProgress } = useScroll();
-  const showDialog = useRef();
+  const showDialog = useRef<() => void>(() => {});
 
   let [open, setOpen] = useState(false);
 

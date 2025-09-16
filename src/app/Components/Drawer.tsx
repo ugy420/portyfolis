@@ -5,16 +5,17 @@ import { useRef } from 'react'
 
 let links = ["home", "about", "stack", "contact"];
 
-export default function Drawer({showDialog, onCloses} : {showDialog: boolean, onCloses: () => void}){
-  const dialogRef = useRef();
+export default function Drawer({showDialog, onCloses}: {showDialog: React.MutableRefObject<() => void>;
+  onCloses: () => void;}) {
+ const dialogRef = useRef<HTMLDialogElement>(null);
 
   showDialog.current = () => {
-    dialogRef.current.showModal();
+    dialogRef.current?.showModal();
   }
 
   function closeModal(){
     onCloses();
-    dialogRef.current.close();
+    dialogRef.current?.close();
   }
 
   function handleDialogClick() {
