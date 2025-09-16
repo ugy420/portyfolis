@@ -5,6 +5,7 @@ import Button from "./ui/Button";
 import Image from "next/image";
 import InputLabel from "./ui/InputLabel";
 import { useState } from "react";
+import {motion} from 'framer-motion';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -38,7 +39,12 @@ export default function Contact() {
   }
 
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0, x:50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, type: 'spring' }}
+      viewport={{ amount:0.5}}
+      className={styles.container}>
       <div className="title" id="contact">
         <span>
           <a href="#contact">#</a>
@@ -81,6 +87,6 @@ export default function Contact() {
           <Button text="Send" className={styles.btn} onClick={handleSubmit} disabled={!(formData.name && formData.email && formData.email.includes("@") && formData.message)} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
