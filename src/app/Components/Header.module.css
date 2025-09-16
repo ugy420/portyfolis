@@ -24,7 +24,7 @@
 .hamburger span {
     position: absolute;
     height: 5px;
-    width: 2%;
+    width: 25px;
     background: var(--complimentary-color);
     border-radius: 9px;
     -webkit-transform: rotate(0deg);
@@ -59,4 +59,15 @@
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        font-size: 1.5rem;
+        padding-inline: 1rem;
+    }
+    .hamburger{
+        width: 30px;
+        padding: 6px;
+    }
 }

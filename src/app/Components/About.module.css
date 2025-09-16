@@ -1,6 +1,6 @@
 .container {
     padding-top: 5rem;
-    height: 100vh;
+    min-height: 100vh
 }
 
 .content{
@@ -13,4 +13,21 @@
 .text_div{
     word-wrap: break-word;  
     width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding-top: 3rem;
+    }
+    .content{
+        padding-top:3rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .text_div{
+        width: 90%;
+        text-align: center;
+    }
 }

@@ -67,3 +67,9 @@ button{
   font-family: var(--font-poppins);
   font-weight: 400;
 }
+
+@media only screen and (max-width: 600px) {
+  .title span{
+      display:none;
+  }
+}

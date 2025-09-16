@@ -1,6 +1,7 @@
 .header {
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .email{
@@ -14,4 +15,10 @@
 
 .email:hover{
     color: var(--emphasis-color);
+}
+
+@media only screen and (max-width:600px){
+    .email{
+        display: none;
+    }
 }

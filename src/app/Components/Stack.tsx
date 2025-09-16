@@ -1,6 +1,28 @@
 import styles from './Stack.module.css'
 import IconLabel from './ui/IconLabel'
 
+let data = {
+  "Frontend": [
+    { "source": "javascript.png", "label": "JavaScript" },
+    { "source": "typescript.png", "label": "TypeScript" },
+    { "source": "react.png", "label": "React" },
+    { "source": "nextjs.png", "label": "Next.js" },
+    { "source": "tailwind.png", "label": "Tailwind CSS", "width": "45px", "height": "30px" }
+  ],
+  "Backend": [
+    { "source": "node.png", "label": "Node.js" },
+    { "source": "express.svg", "label": "Express.js" }
+  ],
+  "Database": [
+    { "source": "mysql.png", "label": "MySQL" },
+    { "source": "postgresql.png", "label": "PostgreSQL" }
+  ],
+  "Tools": [
+    { "source": "figma.svg", "label": "Figma" },
+    { "source": "git.png", "label": "Git" }
+  ]
+}
+
 export default function Stack(){
     return (
         <div className={styles.container}>
@@ -14,9 +36,10 @@ export default function Stack(){
             </div>
             <div className={styles.grid}>
                 <div className={styles.category}>
-                    Frontend
+                   Frontend
                 </div>
                 <div className={styles.gridItem}>
+                    {/* {data.map(data)} */}
                     <IconLabel source='javascript.png' label='JavaScript'/>
                     <IconLabel source='typescript.png' label='TypeScript'/>
                     <IconLabel source='react.png' label="React"/>
